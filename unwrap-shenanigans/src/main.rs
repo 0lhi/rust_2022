@@ -12,11 +12,11 @@ fn main() {
                 println!(
                     "Type a number between 1-6 to determine the Error Management.
                     
-                    Mode 1 = gift.expect (Default)
-                    Mode 2 = gift.unwrap
-                    Mode 3 = gift.unwrap_or
-                    Mode 4 = gift.unwrap_or_default
-                    Mode 5 = gift.unwrap_or_else
+                    Mode 1 = gift.expect (Default) // Error expected, custom Error message.
+                    Mode 2 = gift.unwrap // Error expected, no custom Error message.
+                    Mode 3 = gift.unwrap_or // Pick alternative value of the needed type
+                    Mode 4 = gift.unwrap_or_default // Give default value of needed type, like 0 or "".
+                    Mode 5 = gift.unwrap_or_else // Call functions that give needed type.
                     Mode 6 = gift.unwrap_unchecked (Let's not.)",
                     //                    env::args().next().unwrap()
                 );
